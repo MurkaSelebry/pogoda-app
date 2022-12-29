@@ -12,11 +12,13 @@ public class HelloApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 480, 650);
+
         stage.setTitle("Clothes&Weather");
         stage.setScene(scene);
-        stage.getIcons().add(new Image("file:C:/javaproekt/proekt/src/main/resources/com/example/proekt/images/cloudsun.png"));
-        scene.getStylesheets().add("file:C:/javaproekt/proekt/src/main/resources/com/example/proekt/styles/styles.css");
+        stage.getIcons().add(new Image("file:images/cloudsun.png"));
+        scene.getStylesheets().add("file:styles/styles.css");
         stage.setResizable(false);
+
         stage.show();
     }
 
